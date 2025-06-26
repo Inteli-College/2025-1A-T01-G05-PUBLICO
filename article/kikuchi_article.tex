@@ -7,9 +7,9 @@
 \usepackage{ragged2e}
 \newcommand{\cellwrap}[1]{\RaggedRight #1\hfill}
 
-\title{Comparative Analysis of Feature Extraction Techniques with Kinect V1 for Low-Cost Autonomous Robotics}
+\title{Development and Analysis of a Distributed VSLAM System for Low-Cost Robotics Using ROS 2 and Docker}
 \author{Filipi Enzo Siqueira Kikuchi}
-\date{2025}
+\date{\today} 
 
 \begin{document}
 
@@ -27,17 +27,25 @@ With advances in computer vision, the detection and tracking of keypoints (featu
 
 This work investigates different feature extraction methods applied to RGB-D data captured by a Kinect V1 sensor, aiming to identify which performs best for low-cost mobile robotics scenarios. Choosing efficient algorithms can benefit academic projects, educational platforms, or commercial low-investment solutions, broadening access to autonomous navigation technologies.
 
-\section{Justification for Using Kinect V1 and Feature Extraction Comparison}
+\section{System Components and Justification}
 
-The Kinect V1 sensor is widely adopted in robotics projects for offering both RGB images and depth data, making it a low-cost alternative to professional 3D mapping sensors such as LiDARs. Although originally developed for entertainment applications, the Kinect’s real-time depth capabilities make it well-suited for navigation experiments and small-scale 3D reconstructions.
+The selection of each component in this project was guided by the objectives of low cost, modularity, and use of modern robotics software practices.
+
+The \textbf{Kinect V1} sensor is widely adopted in robotics projects for offering both RGB images and depth data, making it a low-cost alternative to professional 3D mapping sensors such as LiDARs. Although originally developed for entertainment applications, the Kinect’s real-time depth capabilities make it well-suited for navigation experiments and small-scale 3D reconstructions.
 
 The goal of this project is to use the Kinect as an experimental platform to compare different feature extraction algorithms — such as ORB, SURF, and BRISK — applied to RGB and RGB-D images, evaluating their efficiency and robustness. These algorithms are extensively used in SLAM systems and computer vision applications, each with distinct trade-offs in execution time, invariance properties, and noise tolerance.
 
 By understanding the behavior of these algorithms in a controlled environment with a low-cost sensor, we aim to contribute to the identification of a general-purpose approach for feature extraction in robotic platforms constrained by budget and processing power. This contribution is particularly relevant to educational contexts, emerging research labs, and accessible automation initiatives.
 
+The \textbf{Robot Operating System 2 (ROS 2)} was selected as the middleware framework. Its architecture, based on the Data Distribution Service (DDS) standard, is inherently designed for distributed systems, enabling seamless communication between the Raspberry Pi and the desktop computer over a standard network.
+
+\textbf{Docker} was employed to create a containerized development environment. This approach ensures that all dependencies—from system libraries and `libfreenect` to specific Python packages and the ROS 2 distribution itself—are encapsulated into a single, portable image. This guarantees environment reproducibility and simplifies deployment on different machines.
+
+Finally, \textbf{RTAB-Map (Real-Time Appearance-Based Mapping)} was chosen as the core SLAM algorithm due to its excellent performance with RGB-D data, its robust loop closure detection capabilities, and its seamless integration as a suite of packages within the ROS ecosystem.
+
 \section{Literature Review}
 
-We present below a comparative analysis of key research papers that support the understanding of modern Visual SLAM approaches and their applications in autonomous robotics. This review provides a foundation to support the methodological decisions taken in this project.
+We present the following comparative analysis of key research papers that support the understanding of modern Visual SLAM approaches and their applications in autonomous robotics. This review provides a foundation to support the methodological decisions taken in this project.
 
 \begin{center}
 \sloppy
@@ -71,6 +79,47 @@ From this table, we can observe how Visual SLAM has evolved over time, with the 
 Due to the continuous and long-term operation of agents that rely on SLAM-based navigation in various environments, concerns about redundancy in sensor readings become a key focus in papers proposing robust solutions. In this context, more recent works tend to adopt a hybrid approach, combining geometric analysis, active perception strategies, and semantic understanding, in addition to the fusion of data from multiple sensors such as LiDAR and monocular cameras. This fusion aims to enhance robustness by achieving higher reliability in perception, relocalization, and loop closure.
 
 Among the evaluation metrics used in SLAM system analysis, techniques involving photometric and geometric error optimization—such as Root Mean Square Error (RMSE)—are the most common. These are often accompanied by real-time performance evaluations and assessments of system resilience in dynamic environments.
+
+\section{Methodology and System Development}
+
+The construction of the VSLAM system followed a structured methodology, encompassing system architecture design, environment containerization, custom node development, sensor calibration, and final integration.
+
+\begin{itemize}
+    \item \textbf{Sensor Node (Raspberry Pi):} Its sole responsibility is to interface with the Kinect V1 sensor, capture RGB and depth images, and publish them as ROS 2 messages onto the network. This minimizes its processing load.
+    \item \textbf{Processing Node (Desktop):} This machine subscribes to the image topics from the network. It runs the computationally intensive nodes: the calibration manager, the RTAB-Map SLAM and odometry algorithms, and the visualization tools (RViz).
+\end{itemize}
+
+\subsection{Containerized Environment Setup}
+A Dockerfile was created to automate the entire environment setup, ensuring reproducibility. The image is based on `ros:jazzy-ros-base` and performs the following key steps:
+\begin{enumerate}
+    \item Installs all system dependencies via `apt-get`, including `libfreenect-dev`, `python3-yaml`, and the `ros-jazzy-rtabmap-ros` and `ros-jazzy-camera-calibration` packages.
+    \item Creates a ROS 2 workspace at \`/root/ros2\_ws`.
+    \item Copies the custom `kinect\_camera` package from the host machine into the image's workspace.
+    \item Compiles the workspace using `colcon build`.
+    \item Sets an `ENTRYPOINT` to automatically source the ROS 2 and workspace setup files, providing a ready-to-use bash terminal.
+\end{enumerate}
+The container is launched with specific arguments to grant it access to the host's USB devices (`--privileged`, `--device=/dev/bus/usb`) and X11 server for displaying graphical interfaces like RViz.
+
+\subsection{Custom ROS 2 Node Development}
+Since no standard ROS 2 driver was readily available that fit our exact needs, two custom Python nodes were developed.
+
+\paragraph{kinect\_publisher.py} This node acts as the bridge between the `libfreenect` library and ROS 2. Its main loop captures synchronized video and depth frames, converts them to `sensor\_msgs/Image` messages, and publishes them on `/kinect/rgb/image\_raw` and `/kinect/depth/image\_raw` topics. Crucially, it sets the `header.frame\_id` to `"camera\_link"` and uses the `qos\_profile\_sensor\_data` QoS profile for compatibility with real-time subscribers.
+
+\paragraph{calibration\_manager.py} This node handles all aspects of camera calibration. It publishes the `sensor\_msgs/CameraInfo` message required by RTAB-Map by loading parameters from a `.yaml` file. It also provides the `/kinect/rgb/set\_camera\_info` service, allowing the `camera\_calibration` tool to update the parameters on-the-fly. This modular design separates the hardware-driving logic from the calibration data management.
+
+\subsection{Camera Calibration and SLAM Execution}
+The final pipeline requires a precise sequence of operations.
+\begin{enumerate}
+    \item \textbf{Static Transform Publication:} A `static\_transform\_publisher` from the `tf2\_ros` package is launched to continuously publish a transform from a `base\_link` frame to the `camera\_link` frame. This establishes the geometric foundation of our robot's coordinate system.
+    \item \textbf{Node Execution:} The custom `kinect\_publisher` and `calibration\_manager` nodes are executed.
+    \item \textbf{VSLAM Launch:} Finally, the main RTAB-Map launch file is executed using `ros2 launch`. The command includes critical parameters and remappings determined through our development process:
+    \begin{itemize}
+        \item `approx\_sync:=true`: To handle potential minor timestamp misalignments from the Kinect V1.
+        \item `rgb\_topic`, `depth\_topic`, `camera\_info\_topic`: Remapped to the topics published by our custom nodes.
+        \item `frame\_id:="camera\_link"`: To inform RTAB-Map of the primary reference frame for incoming data.
+    \end{itemize}
+\end{enumerate}
+This sequence brings the entire system online, allowing RTAB-Map to receive all necessary data streams (RGB, Depth, CameraInfo, and TF) to begin the mapping and localization process, visualized through RViz and the RTAB-Map GUI.
 
 \bibliographystyle{plain}
 \bibliography{kikuchi_ref}
