@@ -121,6 +121,54 @@ The final pipeline requires a precise sequence of operations.
 \end{enumerate}
 This sequence brings the entire system online, allowing RTAB-Map to receive all necessary data streams (RGB, Depth, CameraInfo, and TF) to begin the mapping and localization process, visualized through RViz and the RTAB-Map GUI.
 
+\subsection{Robot Testing}
+After all the calibration and mapping, the primary tests occurred using equipment from Inteli's Maker Laboratory, which is filled with a range of equipment, ranging from cheap sensors and microcontrollers to fully commercial robots.
+
+For the first implementations, the team focused on mapping tests throughout the lab using local computers for this purpose. The focus was to move the Kinect around on a chair to test the processing capacity of the devices and the quality of the map built using the computer vision algorithm. We first looked to generate an accurate mapping of the environment.
+
+For a rapid comparison, we tested the accuracy of generating a map using a Dell G3 15 and the lab's high-performance computer, which has extremely high specifications compared to the first PC. The computer specifications can be checked in Table~\ref{tab:hardware_comparison}.
+
+\begin{table}[ht]
+\centering
+\caption{Hardware Comparison}
+\label{tab:hardware_comparison}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{3}{|c|}{Hardware Comparison} \\
+ \hline
+ \textbf{Component} & \textbf{Dell G3} & \textbf{Lab Computer}\\
+ \hline
+ CPU   & Intel Core i5 9th Gen & -- \\
+ GPU   & NVidia GeForce 1050  & Nvidia A10 \\
+ \hline
+\end{tabular}
+\end{table}
+
+The results from the first mapping tests are detailed in Table~\ref{tab:test_results}.
+
+\begin{table}[ht]
+\centering
+\caption{Results for the First Tests}
+\label{tab:test_results}
+\begin{tabular}{ |p{4.5cm}||p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{3}{|c|}{Results} \\
+ \hline
+ \textbf{Item} & \textbf{Dell G3} & \textbf{Lab Computer}\\
+ \hline
+ Frame rate processing   & 2 frames/s & 15 frames/s \\
+ Time for building the map   &  3 minutes & 1 minute \\
+ Error from position A to B (meters) &  3 meters ($\pm$50 cm) & 5 cm ($\pm$2 cm) \\
+ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{First Conclusions}
+The map can be built on a considerably outdated personal computer with somewhat limited resources available, but it takes more time and is more error-susceptible. On the other hand, using a powerful computer driven by heavy data processing, it was seemingly easy to build such a map. The error reduced drastically, and the overall quality of the generated map for navigation was perceptibly better.
+
+\subsubsection*{Recommendations}
+Using something in between the two tested machines may provide the best cost-benefit for generating high-quality maps for a low-budget purpose.
+
 \bibliographystyle{plain}
 \bibliography{kikuchi_ref}
 
