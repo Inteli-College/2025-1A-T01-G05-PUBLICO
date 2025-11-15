@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>performance_monitor</name>
+  <version>0.0.1</version>
+  <description>Um nó para monitorar a performance do sistema (CPU, RAM, GPU, FPS) durante a execução de SLAM.</description>
+  <maintainer email="filipikikuchi@gmail.com">hallzero</maintainer>
+  <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <depend>rtabmap_msgs</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <exec_depend>python3-psutil</exec_depend>
+  <exec_depend>python3-pynvml</exec_depend>
+  <exec_depend>jetson-stats</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

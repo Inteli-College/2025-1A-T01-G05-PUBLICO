@@ -1,0 +1,37 @@
+[1.781s] Invoking command in '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/src/performance_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/performance_monitor build --build-base /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build install --record /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/install.log --single-version-externally-managed install_data
+[2.092s] running egg_info
+[2.092s] creating ../../build/performance_monitor/performance_monitor.egg-info
+[2.121s] writing ../../build/performance_monitor/performance_monitor.egg-info/PKG-INFO
+[2.121s] writing dependency_links to ../../build/performance_monitor/performance_monitor.egg-info/dependency_links.txt
+[2.121s] writing entry points to ../../build/performance_monitor/performance_monitor.egg-info/entry_points.txt
+[2.121s] writing requirements to ../../build/performance_monitor/performance_monitor.egg-info/requires.txt
+[2.122s] writing top-level names to ../../build/performance_monitor/performance_monitor.egg-info/top_level.txt
+[2.122s] writing manifest file '../../build/performance_monitor/performance_monitor.egg-info/SOURCES.txt'
+[2.170s] reading manifest file '../../build/performance_monitor/performance_monitor.egg-info/SOURCES.txt'
+[2.171s] writing manifest file '../../build/performance_monitor/performance_monitor.egg-info/SOURCES.txt'
+[2.171s] running build
+[2.171s] running build_py
+[2.171s] creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build
+[2.172s] creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib
+[2.172s] creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor
+[2.172s] copying performance_monitor/__init__.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor
+[2.172s] copying performance_monitor/performance_monitor_node.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor
+[2.173s] running install
+[2.181s] running install_lib
+[2.214s] creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor
+[2.214s] copying /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor/__init__.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor
+[2.214s] copying /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor/performance_monitor_node.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor
+[2.215s] byte-compiling /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor/__init__.py to __init__.cpython-312.pyc
+[2.215s] byte-compiling /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor/performance_monitor_node.py to performance_monitor_node.cpython-312.pyc
+[2.218s] running install_data
+[2.218s] creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/ament_index
+[2.218s] creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/ament_index/resource_index
+[2.218s] creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/ament_index/resource_index/packages
+[2.218s] copying resource/performance_monitor -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/ament_index/resource_index/packages
+[2.219s] copying package.xml -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/performance_monitor
+[2.219s] running install_egg_info
+[2.248s] Copying ../../build/performance_monitor/performance_monitor.egg-info to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor-0.0.0-py3.12.egg-info
+[2.249s] running install_scripts
+[2.438s] Installing performance_monitor_node script to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/performance_monitor
+[2.438s] writing list of installed files to '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/install.log'
+[2.481s] Invoked command in '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/src/performance_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/performance_monitor build --build-base /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build install --record /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/install.log --single-version-externally-managed install_data

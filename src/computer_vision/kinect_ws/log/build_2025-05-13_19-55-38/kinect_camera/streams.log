@@ -1,0 +1,21 @@
+[0.996s] Invoking command in '/home/hallzero/Code/kinect_ws/kinect_camera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/kinect_ws/build/kinect_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/kinect_ws/install/kinect_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/kinect_camera build --build-base /home/hallzero/Code/kinect_ws/build/kinect_camera/build install --record /home/hallzero/Code/kinect_ws/build/kinect_camera/install.log --single-version-externally-managed install_data
+[1.330s] running egg_info
+[1.354s] writing ../build/kinect_camera/kinect_camera.egg-info/PKG-INFO
+[1.355s] writing dependency_links to ../build/kinect_camera/kinect_camera.egg-info/dependency_links.txt
+[1.355s] writing entry points to ../build/kinect_camera/kinect_camera.egg-info/entry_points.txt
+[1.355s] writing requirements to ../build/kinect_camera/kinect_camera.egg-info/requires.txt
+[1.355s] writing top-level names to ../build/kinect_camera/kinect_camera.egg-info/top_level.txt
+[1.404s] reading manifest file '../build/kinect_camera/kinect_camera.egg-info/SOURCES.txt'
+[1.404s] writing manifest file '../build/kinect_camera/kinect_camera.egg-info/SOURCES.txt'
+[1.405s] running build
+[1.405s] running build_py
+[1.405s] running install
+[1.414s] running install_lib
+[1.444s] running install_data
+[1.444s] running install_egg_info
+[1.469s] removing '/home/hallzero/Code/kinect_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera-0.0.0-py3.12.egg-info' (and everything under it)
+[1.470s] Copying ../build/kinect_camera/kinect_camera.egg-info to /home/hallzero/Code/kinect_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera-0.0.0-py3.12.egg-info
+[1.471s] running install_scripts
+[1.650s] Installing kinect_node script to /home/hallzero/Code/kinect_ws/install/kinect_camera/lib/kinect_camera
+[1.650s] writing list of installed files to '/home/hallzero/Code/kinect_ws/build/kinect_camera/install.log'
+[1.675s] Invoked command in '/home/hallzero/Code/kinect_ws/kinect_camera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/kinect_ws/build/kinect_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/kinect_ws/install/kinect_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/kinect_camera build --build-base /home/hallzero/Code/kinect_ws/build/kinect_camera/build install --record /home/hallzero/Code/kinect_ws/build/kinect_camera/install.log --single-version-externally-managed install_data

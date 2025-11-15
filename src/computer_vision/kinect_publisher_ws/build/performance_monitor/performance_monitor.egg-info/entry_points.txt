@@ -1,0 +1,2 @@
+[console_scripts]
+performance_monitor_node = performance_monitor.performance_monitor_node:main

@@ -1,0 +1,3 @@
+[console_scripts]
+calibration_manager = kinect_camera.calibration_manager:main
+kinect_node = kinect_camera.kinect_node:main

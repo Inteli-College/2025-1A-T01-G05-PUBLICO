@@ -1,0 +1,22 @@
+[1.124s] Invoking command in '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/src/kinect_camera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinect_camera build --build-base /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build install --record /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/install.log --single-version-externally-managed install_data
+[1.403s] running egg_info
+[1.427s] writing ../../build/kinect_camera/kinect_camera.egg-info/PKG-INFO
+[1.428s] writing dependency_links to ../../build/kinect_camera/kinect_camera.egg-info/dependency_links.txt
+[1.428s] writing entry points to ../../build/kinect_camera/kinect_camera.egg-info/entry_points.txt
+[1.428s] writing requirements to ../../build/kinect_camera/kinect_camera.egg-info/requires.txt
+[1.428s] writing top-level names to ../../build/kinect_camera/kinect_camera.egg-info/top_level.txt
+[1.475s] reading manifest file '../../build/kinect_camera/kinect_camera.egg-info/SOURCES.txt'
+[1.476s] writing manifest file '../../build/kinect_camera/kinect_camera.egg-info/SOURCES.txt'
+[1.476s] running build
+[1.476s] running build_py
+[1.476s] running install
+[1.482s] running install_lib
+[1.506s] running install_data
+[1.506s] running install_egg_info
+[1.530s] removing '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera-0.0.0-py3.12.egg-info' (and everything under it)
+[1.530s] Copying ../../build/kinect_camera/kinect_camera.egg-info to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera-0.0.0-py3.12.egg-info
+[1.531s] running install_scripts
+[1.675s] Installing calibration_manager script to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/kinect_camera
+[1.675s] Installing kinect_node script to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/kinect_camera
+[1.676s] writing list of installed files to '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/install.log'
+[1.715s] Invoked command in '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/src/kinect_camera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinect_camera build --build-base /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build install --record /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/install.log --single-version-externally-managed install_data

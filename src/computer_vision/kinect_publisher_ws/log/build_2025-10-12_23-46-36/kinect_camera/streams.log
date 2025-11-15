@@ -1,0 +1,33 @@
+[1.673s] Invoking command in '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/src/kinect_camera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinect_camera build --build-base /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build install --record /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/install.log --single-version-externally-managed install_data
+[1.997s] running egg_info
+[2.034s] writing ../../build/kinect_camera/kinect_camera.egg-info/PKG-INFO
+[2.034s] writing dependency_links to ../../build/kinect_camera/kinect_camera.egg-info/dependency_links.txt
+[2.034s] writing entry points to ../../build/kinect_camera/kinect_camera.egg-info/entry_points.txt
+[2.035s] writing requirements to ../../build/kinect_camera/kinect_camera.egg-info/requires.txt
+[2.035s] writing top-level names to ../../build/kinect_camera/kinect_camera.egg-info/top_level.txt
+[2.088s] reading manifest file '../../build/kinect_camera/kinect_camera.egg-info/SOURCES.txt'
+[2.124s] writing manifest file '../../build/kinect_camera/kinect_camera.egg-info/SOURCES.txt'
+[2.124s] running build
+[2.125s] running build_py
+[2.125s] copying kinect_camera/__init__.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build/lib/kinect_camera
+[2.135s] copying kinect_camera/calibration_manager.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build/lib/kinect_camera
+[2.135s] copying kinect_camera/kinect_node.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build/lib/kinect_camera
+[2.135s] running install
+[2.141s] running install_lib
+[2.168s] copying /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build/lib/kinect_camera/__init__.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera
+[2.168s] copying /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build/lib/kinect_camera/calibration_manager.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera
+[2.169s] copying /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build/lib/kinect_camera/kinect_node.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera
+[2.169s] byte-compiling /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera/__init__.py to __init__.cpython-312.pyc
+[2.170s] byte-compiling /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera/calibration_manager.py to calibration_manager.cpython-312.pyc
+[2.171s] byte-compiling /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera/kinect_node.py to kinect_node.cpython-312.pyc
+[2.171s] running install_data
+[2.171s] copying resource/kinect_camera -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/share/ament_index/resource_index/packages
+[2.172s] copying package.xml -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/share/kinect_camera
+[2.172s] running install_egg_info
+[2.199s] removing '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera-0.0.0-py3.12.egg-info' (and everything under it)
+[2.199s] Copying ../../build/kinect_camera/kinect_camera.egg-info to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages/kinect_camera-0.0.0-py3.12.egg-info
+[2.200s] running install_scripts
+[2.380s] Installing calibration_manager script to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/kinect_camera
+[2.380s] Installing kinect_node script to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/kinect_camera
+[2.380s] writing list of installed files to '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/install.log'
+[2.404s] Invoked command in '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/src/kinect_camera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/kinect_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinect_camera build --build-base /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/build install --record /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/kinect_camera/install.log --single-version-externally-managed install_data

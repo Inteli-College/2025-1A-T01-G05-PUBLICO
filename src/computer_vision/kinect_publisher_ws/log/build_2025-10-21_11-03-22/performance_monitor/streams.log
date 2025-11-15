@@ -1,0 +1,21 @@
+[2.570s] Invoking command in '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/src/performance_monitor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/performance_monitor build --build-base /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build install --record /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/install.log --single-version-externally-managed install_data
+[2.925s] running egg_info
+[2.955s] writing ../../build/performance_monitor/performance_monitor.egg-info/PKG-INFO
+[2.955s] writing dependency_links to ../../build/performance_monitor/performance_monitor.egg-info/dependency_links.txt
+[2.956s] writing entry points to ../../build/performance_monitor/performance_monitor.egg-info/entry_points.txt
+[2.956s] writing requirements to ../../build/performance_monitor/performance_monitor.egg-info/requires.txt
+[2.957s] writing top-level names to ../../build/performance_monitor/performance_monitor.egg-info/top_level.txt
+[3.012s] reading manifest file '../../build/performance_monitor/performance_monitor.egg-info/SOURCES.txt'
+[3.014s] writing manifest file '../../build/performance_monitor/performance_monitor.egg-info/SOURCES.txt'
+[3.014s] running build
+[3.014s] running build_py
+[3.014s] running install
+[3.023s] running install_lib
+[3.054s] running install_data
+[3.054s] running install_egg_info
+[3.084s] removing '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor-0.0.0-py3.12.egg-info' (and everything under it)
+[3.085s] Copying ../../build/performance_monitor/performance_monitor.egg-info to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor-0.0.0-py3.12.egg-info
+[3.087s] running install_scripts
+[3.357s] Installing performance_monitor_node script to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/performance_monitor
+[3.357s] writing list of installed files to '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/install.log'
+[3.405s] Invoked command in '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/src/performance_monitor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/performance_monitor build --build-base /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build install --record /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/install.log --single-version-externally-managed install_data

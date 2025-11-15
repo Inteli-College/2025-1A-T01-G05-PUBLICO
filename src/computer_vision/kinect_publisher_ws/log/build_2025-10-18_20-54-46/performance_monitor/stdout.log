@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/performance_monitor/performance_monitor.egg-info
+writing ../../build/performance_monitor/performance_monitor.egg-info/PKG-INFO
+writing dependency_links to ../../build/performance_monitor/performance_monitor.egg-info/dependency_links.txt
+writing entry points to ../../build/performance_monitor/performance_monitor.egg-info/entry_points.txt
+writing requirements to ../../build/performance_monitor/performance_monitor.egg-info/requires.txt
+writing top-level names to ../../build/performance_monitor/performance_monitor.egg-info/top_level.txt
+writing manifest file '../../build/performance_monitor/performance_monitor.egg-info/SOURCES.txt'
+reading manifest file '../../build/performance_monitor/performance_monitor.egg-info/SOURCES.txt'
+writing manifest file '../../build/performance_monitor/performance_monitor.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build
+creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib
+creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor
+copying performance_monitor/__init__.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor
+copying performance_monitor/performance_monitor_node.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor
+running install
+running install_lib
+creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor
+copying /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor/__init__.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor
+copying /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/build/lib/performance_monitor/performance_monitor_node.py -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor
+byte-compiling /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor/performance_monitor_node.py to performance_monitor_node.cpython-312.pyc
+running install_data
+creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/ament_index
+creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/ament_index/resource_index
+creating /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/ament_index/resource_index/packages
+copying resource/performance_monitor -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/ament_index/resource_index/packages
+copying package.xml -> /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/share/performance_monitor
+running install_egg_info
+Copying ../../build/performance_monitor/performance_monitor.egg-info to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/python3.12/site-packages/performance_monitor-0.0.0-py3.12.egg-info
+running install_scripts
+Installing performance_monitor_node script to /home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/install/performance_monitor/lib/performance_monitor
+writing list of installed files to '/home/hallzero/Code/2025-1A-T01-G05-INTERNO/src/computer_vision/kinect_publisher_ws/build/performance_monitor/install.log'
